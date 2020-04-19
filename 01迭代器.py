@@ -17,7 +17,7 @@ myiter=iter(myclass)
 for j in range(5):
     print(next(myiter),end=",")
     if j==4:
-        print()
+        print("")
 
 list=['a','b','c','d','e']
 it=iter(list)
@@ -26,8 +26,6 @@ while True:
         print(next(it))
     except StopIteration:
         sys.exit()
-
-
 
 
 
