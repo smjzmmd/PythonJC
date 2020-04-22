@@ -19,6 +19,8 @@ del list2[len(list2)-1]
 print("刪除後：",list2)
 print()
 
+
 #列表操作
+
 
 
