@@ -25,4 +25,5 @@ print("網站名：{name}，網址：{site}".format(name="百度",site="www.baid
 import math
 print('常量PI的值近似為：{}'.format(math.pi))
 print('常量PI的值近似為：{!r}'.format(math.pi))
+print()
 
