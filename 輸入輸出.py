@@ -25,5 +25,24 @@ print("網站名：{name}，網址：{site}".format(name="百度",site="www.baid
 import math
 print('常量PI的值近似為：{}'.format(math.pi))
 print('常量PI的值近似為：{!r}'.format(math.pi))
-print()
+
+# 可选项 : 和格式标识符可以跟着字段名，对值进行格式化
+print("对PI进行格式化：{0:.3f}".format(math.pi))
+
+# 在 : 传入一个整数，可以在左边填充 个的空格
+print("填充空格：{0:30}".format(math.pi))
+
+#传入字典
+table={'google':1,'runoob':2,'taobao':3}
+print('runoob:{0[runoob]:d};google:{0[google]:d};taobao:{0[taobao]:d}'.format(table))
+#也可以通过在table变量前使用**来实现相同的功能
+print('taoao:{taobao}---google:{google}---runoob:{runoob}'.format(**table))
+
+# 旧版的python使用 % 来格式化字符串。它将左边的阐述作为类似sprintf()式的格式化字符串，而将右边的代入，然后返回格式化后的字符串
+print('常量PI的值近似为：%5.3f'%math.pi)
+
+
+'''----------------------input--------------'''
+
+print("输入了-:{}".format(input("请输入:")))
 
