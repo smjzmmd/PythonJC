@@ -11,10 +11,16 @@ opener ：
 '''
 fil=open(file="F:\\zzz\\Desktop\\软件测试视频.txt")
 print("+=================开始读取文件=================+")
-while True:
-    st=fil.read(1024)
-    print(st)
-    if st<0:
-        print("+=================取文件完毕=================+")
-        break
+st=fil.readlines()
+# for x in st:
+#     print(x)
+print(st)
+fil.close()
+print("+=================取文件完毕,關閉IO=================+")
+
+fil2=open("F:\\zzz\\Desktop\\软件测试视频.txt","a")   # a 用於追加
+print("+=================开始寫入=================+")
+fil2.writelines(["\n","\n","\n","裂開","\n","\n","\n"])
+fil2.close()
+print("+=================寫入完成,關閉IO=================+")
 
